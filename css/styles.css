@@ -1,5 +1,8 @@
 body{
   margin: 0;
+ font-family: 'Montserrat', sans-serif;
+  
+  
 }
 
 header {
@@ -11,12 +14,20 @@ header {
 }
 
 header ul {
+  /* border: 1px solid pink; */
   display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 header li {
   list-style: none;
   display: none;
+}
+
+header h1 {
+  /* border: 1px solid pink; */
+  color: white;
 }
 
 a {
@@ -25,7 +36,16 @@ a {
 }
 
 @media (min-width: 900px) {
+  header ul {
+    width: 30rem;
+  }
   header li {
     display: block;
   }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
 }
