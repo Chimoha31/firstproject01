@@ -2,7 +2,7 @@ body{
   margin: 0;
  font-family: 'Montserrat', sans-serif;
   
-  
+ 
 }
 
 header {
@@ -11,6 +11,12 @@ header {
   background-color: rgba(5, 5, 5, 0.8);
   position: sticky;
   top: 0;
+}
+
+header h1 {
+  /* border: 1px solid pink; */
+  color: white;
+  padding-left: 12px;
 }
 
 header ul {
@@ -23,11 +29,6 @@ header ul {
 header li {
   list-style: none;
   display: none;
-}
-
-header h1 {
-  /* border: 1px solid pink; */
-  color: white;
 }
 
 a {
