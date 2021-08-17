@@ -158,5 +158,209 @@ gift紹介
   padding-right: 2rem;
   padding-left: 2rem;
 }
-
 }
+
+
+/* -----------------------------
+footer accordion 
+-------------------------------*/
+
+.footer {
+  background: #262626;
+  text-align: center;
+}
+
+.footer .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(180, 152, 74);
+}
+
+.footer .fa:hover {
+  color: white;
+}
+
+.footer {
+  color: white;
+  padding: 30px 30px 105px;
+}
+
+
+.footer_menu {
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.footer_menu > div {
+  padding-top: 5px;
+  border-top: solid 1px rgb(180, 152, 74);
+}
+
+.footer_menu > div {
+  border-bottom: solid 1px rgb(180, 152, 74);
+}
+
+#aboutus > dt {
+  margin-top: 20px;
+  font-size: 14px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+#aboutus > dd {
+  display: none;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#contacts > dt {
+  margin-top: 20px;
+  font-size: 14px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+#contacts > dd {
+  display: none;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#accessibility > dt {
+  margin-top: 20px;
+  font-size: 14px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+#accessibility > dd {
+  display: none;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+#aboutus > dt::after {
+  content: " ▼ ";
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3;
+}
+
+#contacts > dt::after {
+  content: " ▼ ";
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3;
+}
+
+#accessibility > dt::after {
+  content: " ▼ ";
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3;
+}
+
+.footer_menu div.appear2 dt::after {
+  transform: rotate(180deg);
+}
+
+#aboutus.appear2 dd {
+  display: block;
+  animation: 0.3s fadeIn2;
+}
+#contacts.appear2 dd {
+  display: block;
+  animation: 0.3s fadeIn2;
+}
+#accessibility.appear2 dd {
+  display: block;
+  animation: 0.3s fadeIn2;
+}
+
+@keyframes fadeIn2 {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: none;
+  }
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 0;
+}
+
+.footer_bottom a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer_nav {
+  width: 92%;
+  margin-left: auto;
+  display: flex;
+  justify-content: stretch;
+  position: fixed;
+  bottom: 0;
+  left: 4%;
+  margin-bottom: 10px;
+  transition: margin-bottom .2s ease-out;
+}
+
+.navitem1, .navitem2 {
+  display: box;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px 10px;
+  line-height: 14px;
+  border: solid 1px rgb(180, 152, 74);
+  width: 100%;
+  background: #262626;
+}
+
+.navitem1 {
+  margin-right: 5px;
+}
+
+.navitem2 {
+  margin-left: 5px;
+}
+
+
+/* -------------------------------------
+laptop用
+---------------------------------------*/
+@media (min-width: 900px) {
+  /*--------------------------------------
+  header
+  --------------------------------------- */
+    header ul {
+      width: 30rem;
+    }
+    header li {
+      display: block;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+  }
